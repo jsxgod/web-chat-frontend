@@ -13,7 +13,7 @@ const Chat = (props) => {
     const [room, setRoom] = useState('');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
-    const ENDPOINT = 'localhost:4000';
+    const ENDPOINT = 'https://backend-webchat.herokuapp.com/';
 
     useEffect(() => {
         /* Location is coming from React Router as a prop*/
