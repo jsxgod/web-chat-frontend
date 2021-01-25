@@ -36,9 +36,9 @@ const Chat = (props) => {
 
     useEffect(() => {
         socket.on('message', (message) => {
-            setMessages([...messages, message]);
+            setMessages(m => [...m, message]);
         })
-    }, [messages]);
+    }, []);
 
     const sendMessage = (event) => {
         event.preventDefault();
